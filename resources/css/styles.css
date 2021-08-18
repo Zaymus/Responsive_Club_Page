@@ -1,0 +1,125 @@
+body {
+	font-family: Montserrat, sans-serif;
+	font-style: 16px;
+	margin: 0;
+	background-color: lightsalmon;
+}
+
+.header {
+	padding-top: 1rem;
+	background-color: teal;
+	color: lightsalmon;
+}
+
+.header ul {
+	list-style: none;
+	margin: 0;
+}
+
+.header ul > li {
+	padding: 0.5rem 1.5rem;
+	margin-right: 1.5rem;
+	display: inline-block;
+}
+
+.banner {
+	height: 30rem;
+	padding-top: 1rem;
+	background-image: url("../images/running-splash.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: none;
+	display: flex;
+	align-items: center;
+}
+
+.banner h1 {
+	background-color: rgba(0.5, 0.5, 0.5, 0.5);
+	color: lightsalmon;
+	text-align: center;
+	padding: 2rem;
+	width: 100%;
+}
+
+.summary,
+.testimonial,
+.photos,
+.meetup {
+	margin: 4em auto;
+	padding: 0 1rem;
+}
+
+.summary h2 {
+	color: yellow;
+}
+
+.summary p {
+	color: white;
+}
+
+.photos {
+	display: flex;
+	justify-content: space-around;
+}
+
+.photos img {
+	width: 30%;
+	margin: 1.5%;
+}
+
+.testimonial {
+	height: 20rem;
+	background-color: teal;
+	padding: 1rem 1rem 0 1rem;
+	color: yellow;
+}
+
+.testimonial h1 {
+	font-size: 2.5rem;
+}
+
+.meetup {
+	color: yellow;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.meetup img {
+	width: 50%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+@media only screen and (max-width: 1050px) {
+	.photos img {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.header ul {
+		padding-left: 0;
+	}
+	.header ul > li {
+		display: block;
+		text-align: center;
+	}
+
+	.photos {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.testimonial h1 {
+		font-size: 1.75rem;
+	}
+
+	.meetup {
+		text-align: center;
+	}
+}
